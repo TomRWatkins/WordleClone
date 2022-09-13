@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import java.util.ArrayList?>
+
+<AnchorPane
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.app.wordleclone.HelloController">
+    <children>
+        <AnchorPane layoutX="-116.0" layoutY="-77.0"
+                    prefHeight="637.0" prefWidth="581.0">
+            <children>
+
+                <Button layoutX="482.0" layoutY="146.0"
+                        mnemonicParsing="false" prefHeight="35.0"
+                        prefWidth="58.0" text="Enter" onAction="#clickSubmit"/>
+                <TextField fx:id="box1" layoutX="162.0" layoutY="143.0"
+                           prefHeight="44.0" prefWidth="43.0"/>
+                <TextField fx:id="box2" layoutX="226.0" layoutY="143.0"
+                           prefHeight="44.0" prefWidth="43.0"/>
+                <TextField fx:id="box3" layoutX="292.0" layoutY="143.0"
+                           prefHeight="44.0" prefWidth="43.0"/>
+                <TextField fx:id="box4" layoutX="354.0" layoutY="143.0"
+                           prefHeight="44.0" prefWidth="43.0"/>
+                <TextField fx:id="box5" layoutX="416.0" layoutY="143.0"
+                           prefHeight="44.0" prefWidth="43.0"/>
+                <fx:define>
+                    <ArrayList fx:id="textList">
+                        <fx:reference source="box1"/>
+                        <fx:reference source="box2"/>
+                        <fx:reference source="box3"/>
+                        <fx:reference source="box4"/>
+                        <fx:reference source="box5"/>
+                    </ArrayList>
+                </fx:define>
+                <Label layoutX="278.0" layoutY="85.0" prefHeight="17.0"
+                       prefWidth="114.0" text="Wordle">
+                    <font>
+                        <Font size="37.0"/>
+                    </font>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                           height="35.0" layoutX="145.0" layoutY="502.0" opacity="0.25"
+                           stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+                <Label fx:id="q" layoutX="155.0" layoutY="506.0"
+                       prefHeight="23.0" prefWidth="19.0" text="Q">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                           height="35.0" layoutX="186.0" layoutY="502.0" opacity="0.25"
+                           stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+                <Label fx:id="w" layoutX="192.0" layoutY="508.0"
+                       prefHeight="28.0" prefWidth="25.0" text="W">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                           height="35.0" layoutX="307.0" layoutY="502.0" opacity="0.25"
+                           stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+                <Label fx:id="t" layoutX="318.0" layoutY="508.0"
+                       prefHeight="22.0" prefWidth="13.0" text="T">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                           height="35.0" layoutX="347.0" layoutY="502.0" opacity="0.25"
+                           stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+                <Label fx:id="y" layoutX="358.0" layoutY="508.0"
+                       prefHeight="23.0" prefWidth="19.0" text="Y">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                           height="35.0" layoutX="388.0" layoutY="502.0" opacity="0.25"
+                           stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+                <Label fx:id="u" layoutX="399.0" layoutY="508.0"
+                       prefHeight="23.0" prefWidth="19.0" text="U">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                           height="35.0" layoutX="429.0" layoutY="502.0" opacity="0.25"
+                           stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+                <Label fx:id="i" layoutX="440.0" layoutY="508.0"
+                       prefHeight="23.0" prefWidth="19.0" text="I">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                           height="35.0" layoutX="470.0" layoutY="502.0" opacity="0.25"
+                           stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+                <Label fx:id="o" layoutX="481.0" layoutY="508.0"
+                       prefHeight="23.0" prefWidth="19.0" text="O">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                           height="35.0" layoutX="511.0" layoutY="502.0" opacity="0.25"
+                           stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+                <Label fx:id="p" layoutX="522.0" layoutY="508.0"
+                       prefHeight="23.0" prefWidth="19.0" text="P">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="errorText" layoutX="262.0" layoutY="472.0"
+                       prefHeight="18.0" prefWidth="155.0"
+                       text="Please Enter a Valid Word" textFill="#ff0404">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                           height="35.0" layoutX="199.0" layoutY="545.0" opacity="0.25"
+                           stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+                <Label fx:id="s" layoutX="210.0" layoutY="551.0"
+                       prefHeight="23.0" prefWidth="19.0" text="S">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                           height="35.0" layoutX="240.0" layoutY="545.0" opacity="0.25"
+                           stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+                <Label fx:id="d" layoutX="251.0" layoutY="551.0"
+                       prefHeight="23.0" prefWidth="19.0" text="D">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                           height="35.0" layoutX="281.0" layoutY="545.0" opacity="0.25"
+                           stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+                <Label fx:id="f" layoutX="292.0" layoutY="551.0"
+                       prefHeight="23.0" prefWidth="19.0" text="F">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                           height="35.0" layoutX="322.0" layoutY="545.0" opacity="0.25"
+                           stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+                <Label fx:id="g" layoutX="333.0" layoutY="551.0"
+                       prefHeight="23.0" prefWidth="19.0" text="G">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                           height="35.0" layoutX="363.0" layoutY="545.0" opacity="0.25"
+                           stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+                <Label fx:id="h" layoutX="374.0" layoutY="551.0"
+                       prefHeight="23.0" prefWidth="19.0" text="H">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                           height="35.0" layoutX="197.0" layoutY="587.0" opacity="0.25"
+                           stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+                <Label fx:id="z" layoutX="208.0" layoutY="593.0"
+                       prefHeight="22.0" prefWidth="13.0" text="Z">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                           height="35.0" layoutX="237.0" layoutY="587.0" opacity="0.25"
+                           stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+                <Label layoutX="248.0" layoutY="593.0" prefHeight="23.0"
+                       prefWidth="19.0" text="X" fx:id="x">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                           height="35.0" layoutX="278.0" layoutY="587.0" opacity="0.25"
+                           stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+                <Label fx:id="c" layoutX="289.0" layoutY="593.0"
+                       prefHeight="23.0" prefWidth="19.0" text="C">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                           height="35.0" layoutX="319.0" layoutY="587.0" opacity="0.25"
+                           stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+                <Label fx:id="v" layoutX="330.0" layoutY="593.0"
+                       prefHeight="23.0" prefWidth="19.0" text="V">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                           height="35.0" layoutX="360.0" layoutY="587.0" opacity="0.25"
+                           stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+                <Label fx:id="b" layoutX="371.0" layoutY="593.0"
+                       prefHeight="23.0" prefWidth="19.0" text="B">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                           height="35.0" layoutX="400.0" layoutY="587.0" opacity="0.25"
+                           stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+                <Label fx:id="n" layoutX="411.0" layoutY="593.0"
+                       prefHeight="23.0" prefWidth="19.0" text="N">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                           height="35.0" layoutX="158.0" layoutY="545.0" opacity="0.25"
+                           stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+                <Label fx:id="a" layoutX="169.0" layoutY="551.0"
+                       prefHeight="22.0" prefWidth="13.0" text="A">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                           height="35.0" layoutX="406.0" layoutY="545.0" opacity="0.25"
+                           stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+                <Label fx:id="j" layoutX="417.0" layoutY="551.0"
+                       prefHeight="23.0" prefWidth="19.0" text="J">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                           height="35.0" layoutX="447.0" layoutY="545.0" opacity="0.25"
+                           stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+                <Label fx:id="k" layoutX="458.0" layoutY="551.0"
+                       prefHeight="23.0" prefWidth="19.0" text="K">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                           height="35.0" layoutX="488.0" layoutY="545.0" opacity="0.25"
+                           stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+                <Label fx:id="l" layoutX="499.0" layoutY="551.0"
+                       prefHeight="23.0" prefWidth="19.0" text="L">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                           height="35.0" layoutX="441.0" layoutY="587.0" opacity="0.25"
+                           stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+                <Label fx:id="m" layoutX="452.0" layoutY="593.0"
+                       prefHeight="23.0" prefWidth="19.0" text="M">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="lbl11" alignment="CENTER"
+                       contentDisplay="CENTER" layoutX="164.0" layoutY="203.0"
+                       prefHeight="44.0" prefWidth="43.0"
+                       style="-fx-background-color: NONE; -fx-text-fill: NONE;" text="1"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5"
+                                        radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <Label fx:id="lbl12" alignment="CENTER"
+                       contentDisplay="CENTER" layoutX="226.0" layoutY="203.0"
+                       prefHeight="44.0" prefWidth="43.0"
+                       style="-fx-background-color: NONE; -fx-text-fill: NONE;" text="1"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5"
+                                        radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <Label fx:id="lbl13" alignment="CENTER"
+                       contentDisplay="CENTER" layoutX="293.0" layoutY="203.0"
+                       prefHeight="44.0" prefWidth="43.0"
+                       style="-fx-background-color: NONE; -fx-text-fill: NONE;" text="1"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5"
+                                        radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <Label fx:id="lbl14" alignment="CENTER"
+                       contentDisplay="CENTER" layoutX="356.0" layoutY="203.0"
+                       prefHeight="44.0" prefWidth="43.0"
+                       style="-fx-background-color: NONE; -fx-text-fill: NONE;" text="1"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5"
+                                        radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <Label fx:id="lbl15" alignment="CENTER"
+                       contentDisplay="CENTER" layoutX="416.0" layoutY="203.0"
+                       prefHeight="44.0" prefWidth="43.0"
+                       style="-fx-background-color: NONE; -fx-text-fill: NONE;" text="1"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5"
+                                        radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+
+                <fx:define>
+                    <ArrayList fx:id="labelList1">
+                        <fx:reference source="lbl11"/>
+                        <fx:reference source="lbl12"/>
+                        <fx:reference source="lbl13"/>
+                        <fx:reference source="lbl14"/>
+                        <fx:reference source="lbl15"/>
+                    </ArrayList>
+                </fx:define>
+                <Label fx:id="lbl21" alignment="CENTER"
+                       contentDisplay="CENTER" layoutX="164.0" layoutY="256.0"
+                       prefHeight="44.0" prefWidth="43.0"
+                       style="-fx-background-color: NONE; -fx-text-fill: NONE;" text="D"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5"
+                                        radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <Label fx:id="lbl22" alignment="CENTER"
+                       contentDisplay="CENTER" layoutX="226.0" layoutY="256.0"
+                       prefHeight="44.0" prefWidth="43.0"
+                       style="-fx-background-color: NONE; -fx-text-fill: NONE;" text="D"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5"
+                                        radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <Label fx:id="lbl23" alignment="CENTER"
+                       contentDisplay="CENTER" layoutX="293.0" layoutY="256.0"
+                       prefHeight="44.0" prefWidth="43.0"
+                       style="-fx-background-color: NONE; -fx-text-fill: NONE;" text="D"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5"
+                                        radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <Label fx:id="lbl24" alignment="CENTER"
+                       contentDisplay="CENTER" layoutX="356.0" layoutY="256.0"
+                       prefHeight="44.0" prefWidth="43.0"
+                       style="-fx-background-color: NONE; -fx-text-fill: NONE;" text="D"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5"
+                                        radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <Label fx:id="lbl25" alignment="CENTER"
+                       contentDisplay="CENTER" layoutX="416.0" layoutY="256.0"
+                       prefHeight="44.0" prefWidth="43.0"
+                       style="-fx-background-color: NONE; -fx-text-fill: NONE;" text="D"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5"
+                                        radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <fx:define>
+                    <ArrayList fx:id="labelList2">
+                        <fx:reference source="lbl21"/>
+                        <fx:reference source="lbl22"/>
+                        <fx:reference source="lbl23"/>
+                        <fx:reference source="lbl24"/>
+                        <fx:reference source="lbl25"/>
+                    </ArrayList>
+                </fx:define>
+                <Label fx:id="lbl31" alignment="CENTER"
+                       contentDisplay="CENTER" layoutX="164.0" layoutY="309.0"
+                       prefHeight="44.0" prefWidth="43.0"
+                       style="-fx-background-color: NONE; -fx-text-fill: NONE;" text="D"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5"
+                                        radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <Label fx:id="lbl32" alignment="CENTER"
+                       contentDisplay="CENTER" layoutX="226.0" layoutY="309.0"
+                       prefHeight="44.0" prefWidth="43.0"
+                       style="-fx-background-color: NONE; -fx-text-fill: NONE;" text="D"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5"
+                                        radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <Label fx:id="lbl33" alignment="CENTER"
+                       contentDisplay="CENTER" layoutX="293.0" layoutY="309.0"
+                       prefHeight="44.0" prefWidth="43.0"
+                       style="-fx-background-color: NONE; -fx-text-fill: NONE;" text="D"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5"
+                                        radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <Label fx:id="lbl34" alignment="CENTER"
+                       contentDisplay="CENTER" layoutX="356.0" layoutY="309.0"
+                       prefHeight="44.0" prefWidth="43.0"
+                       style="-fx-background-color: NONE; -fx-text-fill: NONE;" text="D"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5"
+                                        radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <Label fx:id="lbl35" alignment="CENTER"
+                       contentDisplay="CENTER" layoutX="416.0" layoutY="309.0"
+                       prefHeight="44.0" prefWidth="43.0"
+                       style="-fx-background-color: NONE; -fx-text-fill: NONE;" text="D"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5"
+                                        radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <fx:define>
+                    <ArrayList fx:id="labelList3">
+                        <fx:reference source="lbl31"/>
+                        <fx:reference source="lbl32"/>
+                        <fx:reference source="lbl33"/>
+                        <fx:reference source="lbl34"/>
+                        <fx:reference source="lbl35"/>
+                    </ArrayList>
+                </fx:define>
+                <Label fx:id="lbl41" alignment="CENTER"
+                       contentDisplay="CENTER" layoutX="166.0" layoutY="363.0"
+                       prefHeight="44.0" prefWidth="43.0"
+                       style="-fx-background-color: NONE; -fx-text-fill: NONE;" text="D"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5"
+                                        radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <Label fx:id="lbl42" alignment="CENTER"
+                       contentDisplay="CENTER" layoutX="228.0" layoutY="363.0"
+                       prefHeight="44.0" prefWidth="43.0"
+                       style="-fx-background-color: NONE; -fx-text-fill: NONE;" text="D"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5"
+                                        radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <Label fx:id="lbl43" alignment="CENTER"
+                       contentDisplay="CENTER" layoutX="295.0" layoutY="363.0"
+                       prefHeight="44.0" prefWidth="43.0"
+                       style="-fx-background-color: NONE; -fx-text-fill: NONE;" text="D"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5"
+                                        radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <Label fx:id="lbl44" alignment="CENTER"
+                       contentDisplay="CENTER" layoutX="358.0" layoutY="363.0"
+                       prefHeight="44.0" prefWidth="43.0"
+                       style="-fx-background-color: NONE; -fx-text-fill: NONE;" text="D"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5"
+                                        radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <Label fx:id="lbl45" alignment="CENTER"
+                       contentDisplay="CENTER" layoutX="418.0" layoutY="363.0"
+                       prefHeight="44.0" prefWidth="43.0"
+                       style="-fx-background-color: NONE; -fx-text-fill: NONE;" text="D"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5"
+                                        radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <fx:define>
+                    <ArrayList fx:id="labelList4">
+                        <fx:reference source="lbl41"/>
+                        <fx:reference source="lbl42"/>
+                        <fx:reference source="lbl43"/>
+                        <fx:reference source="lbl44"/>
+                        <fx:reference source="lbl45"/>
+                    </ArrayList>
+                </fx:define>
+                <Label fx:id="lbl51" alignment="CENTER"
+                       contentDisplay="CENTER" layoutX="166.0" layoutY="415.0"
+                       prefHeight="44.0" prefWidth="43.0"
+                       style="-fx-background-color: NONE; -fx-text-fill: NONE;" text="D"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5"
+                                        radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <Label fx:id="lbl52" alignment="CENTER"
+                       contentDisplay="CENTER" layoutX="228.0" layoutY="415.0"
+                       prefHeight="44.0" prefWidth="43.0"
+                       style="-fx-background-color: NONE; -fx-text-fill: NONE;" text="D"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5"
+                                        radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <Label fx:id="lbl53" alignment="CENTER"
+                       contentDisplay="CENTER" layoutX="295.0" layoutY="415.0"
+                       prefHeight="44.0" prefWidth="43.0"
+                       style="-fx-background-color: NONE; -fx-text-fill: NONE;" text="D"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5"
+                                        radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <Label fx:id="lbl54" alignment="CENTER"
+                       contentDisplay="CENTER" layoutX="358.0" layoutY="415.0"
+                       prefHeight="44.0" prefWidth="43.0"
+                       style="-fx-background-color: NONE; -fx-text-fill: NONE;" text="D"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5"
+                                        radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <Label fx:id="lbl55" alignment="CENTER"
+                       contentDisplay="CENTER" layoutX="418.0" layoutY="415.0"
+                       prefHeight="44.0" prefWidth="43.0"
+                       style="-fx-background-color: NONE; -fx-text-fill: NONE;" text="D"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="23.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5"
+                                        radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <fx:define>
+                    <ArrayList fx:id="labelList5">
+                        <fx:reference source="lbl51"/>
+                        <fx:reference source="lbl52"/>
+                        <fx:reference source="lbl53"/>
+                        <fx:reference source="lbl54"/>
+                        <fx:reference source="lbl55"/>
+                    </ArrayList>
+                </fx:define>
+                <Button onAction="#refresh" layoutX="482.0" layoutY="91.0"
+                        mnemonicParsing="false" prefHeight="35.0" prefWidth="58.0"
+                        text="Restart"/>
+            </children>
+        </AnchorPane>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                   height="35.0" layoutX="111.0" layoutY="425.0" opacity="0.25"
+                   stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+        <Label fx:id="e" layoutX="122.0" layoutY="431.0"
+               prefHeight="22.0" prefWidth="13.0" text="E">
+            <font>
+                <Font name="System Bold" size="22.0"/>
+            </font>
+        </Label>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6bebe"
+                   height="35.0" layoutX="151.0" layoutY="425.0" opacity="0.25"
+                   stroke="BLACK" strokeType="INSIDE" width="35.0"/>
+        <Label fx:id="r" layoutX="162.0" layoutY="431.0"
+               prefHeight="22.0" prefWidth="13.0" text="R">
+            <font>
+                <Font name="System Bold" size="22.0"/>
+            </font>
+        </Label>
+        <fx:define>
+            <ArrayList fx:id="keyboardList">
+                <fx:reference source="a"/>
+                <fx:reference source="b"/>
+                <fx:reference source="c"/>
+                <fx:reference source="d"/>
+                <fx:reference source="e"/>
+                <fx:reference source="f"/>
+                <fx:reference source="g"/>
+                <fx:reference source="h"/>
+                <fx:reference source="i"/>
+                <fx:reference source="j"/>
+                <fx:reference source="k"/>
+                <fx:reference source="l"/>
+                <fx:reference source="m"/>
+                <fx:reference source="n"/>
+                <fx:reference source="o"/>
+                <fx:reference source="p"/>
+                <fx:reference source="q"/>
+                <fx:reference source="r"/>
+                <fx:reference source="s"/>
+                <fx:reference source="t"/>
+                <fx:reference source="u"/>
+                <fx:reference source="v"/>
+                <fx:reference source="w"/>
+                <fx:reference source="x"/>
+                <fx:reference source="y"/>
+                <fx:reference source="z"/>
+            </ArrayList>
+        </fx:define>
+    </children>
+</AnchorPane>
